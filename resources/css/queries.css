@@ -1,0 +1,153 @@
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        height: unset;
+    }
+
+    .hero-section {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .hero-text {
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 280%;
+    }
+
+    .skills-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .action-button-container {
+        display: block;
+    }
+
+    .action-button-items {
+        bottom: 3rem;
+        right: -0.7rem;
+    }
+
+    .logo { 
+        font-size: 200%;
+        flex: 1;
+        text-align: center;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-button {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hero-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 280%;
+        text-align: center;
+    }
+
+    .about-info {
+        margin: 24px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info span:first-child {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 80%;
+    }
+
+    .skills-section {
+        align-items: center;
+        padding: 32px 24px;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .portfolio-section {
+        padding: 32px 24px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        margin-bottom: 12px;
+    }
+
+    .project-image {
+        background-color: unset;
+    }
+
+    .project-image img {
+        opacity: 1;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    footer {
+        padding-top: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding-top: 18px;
+        padding-bottom: 8px;
+    }
+}

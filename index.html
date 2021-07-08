@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papi Diagne</title>
     <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/queries.css" />
     <script
       src="https://kit.fontawesome.com/352217b73d.js"
       crossorigin="anonymous"
@@ -13,6 +14,17 @@
   </head>
 
   <body>
+      <div class="action-button-container">
+        <button id="action-button" class="action-button" onclick="toggleActionButton()">
+            <i class="fa fa-plus"></i>
+        </button>
+          <ul class="action-button-items">
+            <li class="action-button-item"><button><i class="fa fa-home"></i></button></li>
+            <li class="action-button-item"><button><i class="fa fa-user"></i></button></li>
+            <li class="action-button-item"><button><i class="fa fa-lightbulb-o"></i></button></li>
+            <li class="action-button-item"><button><i class="fa fa-at"></i></button></li>
+            </ul>
+      </div>
     <header>
       <nav class="navigation">
         <span class="logo">Papi Diagne</span>
@@ -52,7 +64,7 @@
       <h2 class="skills-title">My skills</h2>
       <div class="skills-grid">
         <div class="skills-box">
-          <h4>Web Development</h4>
+          <h4 class="skills-box-title">Web Development</h4>
           <div class="skills-elements">
             <div class="skills-item">React JS</div>
             <div class="skills-item">HTML</div>
@@ -130,12 +142,33 @@
       <div class="socials">
         <h2 class="socials-title">Find me on</h2>
         <div class="socials-icons">
-          <a href="https://twitter.com/papidiagne30" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="https://github.com/nushen96" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/papa-abdoulaye-diagne-bb62b7140/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/papidiagne30" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://github.com/nushen96" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/papa-abdoulaye-diagne-bb62b7140/"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
         </div>
       </div>
       <p class="copyright">Copyright papidiagne30 2021. All rights reserved.</p>
     </footer>
+    <script>
+        function checkClick() {
+            console.log("clicked")
+        }
+        function toggleActionButton() {
+            let elem = document.getElementById("action-button");
+            if(elem.classList.contains("action-button--open")) {
+                elem.classList.remove("action-button--open")
+            } else {
+                elem.classList.add("action-button--open")
+            }
+        }
+    </script>
   </body>
 </html>
