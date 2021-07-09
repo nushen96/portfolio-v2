@@ -30,6 +30,19 @@ const handleScrollAnimation = () => {
     })
 }
 
+let throttleTimer = false;
+
+const throttle = (callback, time) => {
+    if (throttleTimer) return;
+
+    throttleTimer = true;
+
+    setTimeout(() => {
+        callback();
+        throttleTimer = false;
+    }, time)
+}
+
 window.addEventListener('scroll', () => {
-    handleScrollAnimation();
+    throttle(handleScrollAnimation, 250);
 })
