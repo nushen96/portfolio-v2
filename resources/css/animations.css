@@ -91,10 +91,3 @@
     opacity: 1;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .skills-box--animated {
-    animation: wipe-enter 0.5s ease-in-out;
-    -webkit-animation: wipe-enter 0.5s ease-in-out;
-  }
-}
