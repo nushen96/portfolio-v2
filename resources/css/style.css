@@ -105,12 +105,13 @@ p {
   pointer-events: none;
 }
 
-.action-button--open {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+.action-button--open,
+.action-button--open:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 .action-button--open + .action-button-items {
