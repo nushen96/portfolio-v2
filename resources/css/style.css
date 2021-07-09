@@ -161,7 +161,7 @@ header {
 .navigation-item {
   margin-left: 24px;
   text-decoration: none;
-  color: #000;
+  color: #333;
   font-size: 90%;
 }
 
@@ -373,7 +373,7 @@ footer {
 }
 
 .socials-icons a {
-  color: #000;
+  color: #333;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
