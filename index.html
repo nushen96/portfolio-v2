@@ -7,6 +7,7 @@
     <title>Papi Diagne</title>
     <link rel="stylesheet" href="./resources/css/style.css" />
     <link rel="stylesheet" href="./resources/css/queries.css" />
+    <link rel="stylesheet" href="./resources/css/animations.css" />
     <script
       src="https://kit.fontawesome.com/352217b73d.js"
       crossorigin="anonymous"
@@ -14,25 +15,45 @@
   </head>
 
   <body>
-      <div class="action-button-container">
-        <button id="action-button" class="action-button" onclick="toggleActionButton()">
-            <i class="fa fa-plus"></i>
-        </button>
-          <ul class="action-button-items">
-            <li class="action-button-item"><button><i class="fa fa-home"></i></button></li>
-            <li class="action-button-item"><button><i class="fa fa-user"></i></button></li>
-            <li class="action-button-item"><button><i class="fa fa-lightbulb-o"></i></button></li>
-            <li class="action-button-item"><button><i class="fa fa-at"></i></button></li>
-            </ul>
-      </div>
-    <header>
+    <div class="action-button-container">
+      <button
+        id="action-button"
+        class="action-button"
+        onclick="toggleActionButton()"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
+      <ul class="action-button-items">
+        <li class="action-button-item">
+          <a href="#header-section">
+            <button><i class="fa fa-home"></i></button>
+          </a>
+        </li>
+        <li class="action-button-item">
+          <a href="#about-section">
+            <button><i class="fa fa-user"></i></button>
+          </a>
+        </li>
+        <li class="action-button-item">
+          <a href="#skills-section">
+            <button><i class="fa fa-tools"></i></button>
+          </a>
+        </li>
+        <li class="action-button-item">
+          <a href="#portfolio-section">
+            <button><i class="fa fa-lightbulb-o"></i></button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <header id="header-section">
       <nav class="navigation">
         <span class="logo">Papi Diagne</span>
         <div class="navigation-menu">
           <a href="" class="navigation-item navigation-item__active">Home</a>
-          <a href="" class="navigation-item">About Me</a>
-          <a href="" class="navigation-item">Projects</a>
-          <a href="" class="navigation-item">Contact</a>
+          <a href="#about-section" class="navigation-item">About Me</a>
+          <a href="#skills-section" class="navigation-item">Skills</a>
+          <a href="#portfolio-section" class="navigation-item">Portfolio</a>
         </div>
         <button class="header-button">Hire Me</button>
       </nav>
@@ -47,23 +68,27 @@
         </div>
       </div>
     </header>
-    <section class="about-section dark-section">
+    <section id="about-section" class="about-section dark-section">
       <h2>Who am I ?</h2>
       <div class="about-info">
-        <span><i class="fa fa-school"></i>M. Sc. Computer Science</span>
-        <span><i class="fa fa-clock"></i>2+ years experience</span>
+        <span class="js--scroll slide-from-left"
+          ><i class="fa fa-school"></i>M. Sc. Computer Science</span
+        >
+        <span class="js--scroll slide-from-right"
+          ><i class="fa fa-clock"></i>2+ years experience</span
+        >
       </div>
-      <p class="about-text">
+      <p class="about-text js--scroll appear">
         I enjoy being challenged and engaging with projects that require me to
         work outside my comfort and knowledge set, as continuing to learn new
         languages and development techniques are important to me and the success
         of your projects.
       </p>
     </section>
-    <section class="skills-section">
+    <section id="skills-section" class="skills-section">
       <h2 class="skills-title">My skills</h2>
       <div class="skills-grid">
-        <div class="skills-box">
+        <div class="skills-box js--scroll slide-from-left">
           <h4 class="skills-box-title">Web Development</h4>
           <div class="skills-elements">
             <div class="skills-item">React JS</div>
@@ -72,14 +97,14 @@
             <div class="skills-item">Javascript</div>
           </div>
         </div>
-        <div class="skills-box">
+        <div class="skills-box js--scroll slide-from-right">
           <h4 class="skills-box-title">Mobile Development</h4>
           <div class="skills-elements">
             <div class="skills-item">React Native</div>
             <div class="skills-item">Swift UI</div>
           </div>
         </div>
-        <div class="skills-box">
+        <div class="skills-box js--scroll slide-from-left">
           <h4 class="skills-box-title backend">Backend</h4>
           <div class="skills-elements">
             <div class="skills-item">Node.js</div>
@@ -88,7 +113,7 @@
             <div class="skills-item">Spring</div>
           </div>
         </div>
-        <div class="skills-box">
+        <div class="skills-box js--scroll slide-from-right">
           <h4 class="skills-box-title">UX/UI Design</h4>
           <div class="skills-elements">
             <div class="skills-item">Figma</div>
@@ -96,11 +121,11 @@
         </div>
       </div>
     </section>
-    <section class="portfolio-section dark-section">
+    <section id="portfolio-section" class="portfolio-section dark-section">
       <h2 class="portfolio-title">Portfolio</h2>
       <p class="portfolio-title">Some projects that I have worked on</p>
       <div class="projects-container">
-        <div class="project-box">
+        <div class="project-box js--scroll wipe-enter">
           <figure class="project-image">
             <a href="http://www.mayite-service.com/" target="_blank">
               <img
@@ -109,7 +134,7 @@
             /></a>
           </figure>
         </div>
-        <div class="project-box">
+        <div class="project-box js--scroll wipe-enter">
           <figure class="project-image">
             <a href="https://abdiagne96.wixsite.com/samaoude" target="_blank">
               <img
@@ -118,7 +143,7 @@
             /></a>
           </figure>
         </div>
-        <div class="project-box">
+        <div class="project-box js--scroll wipe-enter">
           <figure class="project-image">
             <a href="http://webdesigncourse.co/omnifood/" target="_blank">
               <img
@@ -127,7 +152,7 @@
             /></a>
           </figure>
         </div>
-        <div class="project-box">
+        <div class="project-box js--scroll wipe-enter">
           <figure class="project-image">
             <a href="https://www.weegolines.com/" target="_blank">
               <img
@@ -142,13 +167,20 @@
       <div class="socials">
         <h2 class="socials-title">Find me on</h2>
         <div class="socials-icons">
-          <a href="https://twitter.com/papidiagne30" target="_blank"
+          <a
+            class="js--scroll appear"
+            href="https://twitter.com/papidiagne30"
+            target="_blank"
             ><i class="fa fa-twitter"></i
           ></a>
-          <a href="https://github.com/nushen96" target="_blank"
+          <a
+            class="js--scroll appear"
+            href="https://github.com/nushen96"
+            target="_blank"
             ><i class="fa fa-github"></i
           ></a>
           <a
+            class="js--scroll appear"
             href="https://www.linkedin.com/in/papa-abdoulaye-diagne-bb62b7140/"
             target="_blank"
             ><i class="fa fa-linkedin"></i
@@ -158,17 +190,18 @@
       <p class="copyright">Copyright papidiagne30 2021. All rights reserved.</p>
     </footer>
     <script>
-        function checkClick() {
-            console.log("clicked")
+      function checkClick() {
+        console.log("clicked");
+      }
+      function toggleActionButton() {
+        let elem = document.getElementById("action-button");
+        if (elem.classList.contains("action-button--open")) {
+          elem.classList.remove("action-button--open");
+        } else {
+          elem.classList.add("action-button--open");
         }
-        function toggleActionButton() {
-            let elem = document.getElementById("action-button");
-            if(elem.classList.contains("action-button--open")) {
-                elem.classList.remove("action-button--open")
-            } else {
-                elem.classList.add("action-button--open")
-            }
-        }
+      }
     </script>
+    <script src="./resources/js/animations-controller.js"></script>
   </body>
 </html>

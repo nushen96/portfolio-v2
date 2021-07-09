@@ -1,0 +1,99 @@
+.js--scrolled.slide-from-left {
+    animation: slideFromLeft 1s ease-in-out both;
+    -webkit-animation: slideFromLeft 1s ease-in-out both;
+}
+
+.js--scrolled.slide-from-right {
+    animation: slideFromRight 1s ease-in-out both;
+    -webkit-animation: slideFromRight 1s ease-in-out both;
+}
+
+.js--scrolled.appear {
+    animation: appear 1s ease-in-out both;
+    -webkit-animation: appear 1s ease-in-out both;
+}
+
+.js--scrolled.wipe-enter {
+    animation: wipe-enter 1s ease-in-out both;
+    -webkit-animation: wipe-enter 1s ease-in-out both;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+    -moz-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
+    -o-transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+    -moz-transform: translateX(100vw);
+    -ms-transform: translateX(100vw);
+    -o-transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes wipe-enter {
+  from {
+    transform: scale(0, 0.025);
+    opacity: 0;
+    -webkit-transform: scale(0, 0.025);
+    -moz-transform: scale(0, 0.025);
+    -ms-transform: scale(0, 0.025);
+    -o-transform: scale(0, 0.025);
+  }
+  to {
+    transform: scale(1 0.025);
+    opacity: 1;
+    -webkit-transform: scale(1 0.025);
+    -moz-transform: scale(1 0.025);
+    -ms-transform: scale(1 0.025);
+    -o-transform: scale(1 0.025);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skills-box--animated {
+    animation: wipe-enter 0.5s ease-in-out;
+    -webkit-animation: wipe-enter 0.5s ease-in-out;
+  }
+}
