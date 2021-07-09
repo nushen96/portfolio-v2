@@ -91,3 +91,15 @@
     opacity: 1;
   }
 }
+
+/* user doesn't want animations */
+@media (prefers-reduced-motion) {
+  .js--scroll {
+    opacity: 1;
+  }
+
+  .js--scrolled {
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+}

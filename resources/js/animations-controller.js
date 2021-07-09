@@ -43,6 +43,10 @@ const throttle = (callback, time) => {
     }, time)
 }
 
+const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+
 window.addEventListener('scroll', () => {
-    throttle(handleScrollAnimation, 250);
+    if (mediaQuery && !mediaQuery.matches) {
+        throttle(handleScrollAnimation, 250);
+    }
 })
