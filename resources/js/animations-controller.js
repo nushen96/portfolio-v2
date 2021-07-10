@@ -1,9 +1,5 @@
 const scrollElements = document.querySelectorAll('.js--scroll')
 
-scrollElements.forEach(elem => {
-    elem.style.opacity = 0;
-})
-
 const isElementVisible = (elem, percentageScroll = 100) => {
     const distanceFromTop = elem.getBoundingClientRect().top;
 
@@ -43,10 +39,17 @@ const throttle = (callback, time) => {
     }, time)
 }
 
-const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+function areMotionsReduced() {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    return mediaQuery && mediaQuery.matches
+}
+
 
 window.addEventListener('scroll', () => {
-    if (mediaQuery && !mediaQuery.matches) {
+    if (!areMotionsReduced()) {
+        scrollElements.forEach(elem => {
+            elem.style.opacity = 0;
+        })
         throttle(handleScrollAnimation, 250);
     }
 })
