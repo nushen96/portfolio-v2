@@ -33,8 +33,8 @@ const scrollSmoothlyTo = (element, scrollingDuration = 500) => {
 };
 
 function areMotionsReduced() {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
-    return mediaQuery && mediaQuery.matches
+  const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  return mediaQuery && mediaQuery.matches;
 }
 
 if (!areMotionsReduced()) {
@@ -47,4 +47,13 @@ if (!areMotionsReduced()) {
       scrollSmoothlyTo(targetElement);
     });
   });
+}
+
+function toggleActionButton() {
+  let elem = document.getElementById("action-button");
+  if (elem.classList.contains("action-button--open")) {
+    elem.classList.remove("action-button--open");
+  } else {
+    elem.classList.add("action-button--open");
+  }
 }
