@@ -30,7 +30,7 @@
         padding-bottom: 10px;
     }
 
-    .header-button {
+    .button.header-button {
         display: none;
     }
 
@@ -62,7 +62,7 @@
         align-items: center;
     }
 
-    .hero-button {
+    .button.hero-button {
         width: 100%;
         margin-bottom: 24px;
     }
