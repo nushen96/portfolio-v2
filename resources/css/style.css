@@ -40,6 +40,9 @@ a.button, button {
   background-color: #4381c1;
   color: #fff;
   padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -250,6 +253,11 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.about-section span {
+  text-align: center;
 }
 
 .about-text {
