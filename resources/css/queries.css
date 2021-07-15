@@ -4,7 +4,7 @@
     }
 
     header {
-        height: unset;
+        height: 80vh;
     }
 
     .hero-section {
@@ -37,6 +37,15 @@
     .navigation {
         justify-content: center;
     }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .sticky-navigation {
+        display: none;
+    }
+
 
     .action-button-container {
         display: block;

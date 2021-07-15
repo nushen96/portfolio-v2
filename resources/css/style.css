@@ -17,7 +17,7 @@ body {
   font-size: 22px;
   font-weight: 300;
   width: 100vw;
-  padding-top: 24px;
+  padding-top: 12px;
   padding-bottom: 12px;
 }
 
@@ -154,24 +154,47 @@ p {
 }
 
 header {
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   padding: 0 60px;
+  overflow: auto;
 }
 
 .navigation {
   display: flex;
+  position: absolute;
+  margin-bottom: 24px;
+  top: 0;
+  left: 0;
+  padding: 0.4em 2em;
+  width: 100vw;
+  transition: box-shadow 0.5s ease;
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+}
+
+.sticky-navigation {
+  position: fixed;
+  background-color: #f4f1f1;
+  z-index: 3;
+  box-shadow: 0 1px 3px #b3b3b3;
 }
 
 .navigation-menu {
   flex: 1;
   margin-left: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   font-family: "Lobster", cursive;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-item {
@@ -198,6 +221,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-text-box {

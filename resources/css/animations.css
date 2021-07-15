@@ -34,6 +34,26 @@
   }
 }
 
+@keyframes appearQuickly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top:0;
+  }
+}
+
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100vw);
