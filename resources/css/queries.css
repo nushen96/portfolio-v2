@@ -4,12 +4,14 @@
     }
 
     header {
-        height: 80vh;
+        height: auto;
     }
 
     .hero-section {
         margin-top: 24px;
-        margin-bottom: 24px;
+        margin-bottom: 48px;
+        position: relative;
+        top: 24px;
     }
 
     .hero-text {
@@ -67,6 +69,7 @@
     }
 
     .hero-section {
+        flex: 1;
         flex-direction: column-reverse;
         align-items: center;
     }
