@@ -116,6 +116,14 @@ p {
   height: 4rem;
 }
 
+.action-button:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
 .action-button + .action-button-items {
   pointer-events: none;
 }
