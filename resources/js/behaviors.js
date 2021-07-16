@@ -63,7 +63,6 @@ window.onscroll = () => {handleStickyNavigation()}
 function handleStickyNavigation() {
   const currentPosition = window.scrollY;
   const navbar = document.querySelector('.navigation')
-  console.log(currentPosition)
   if(currentPosition>0) {
     navbar.classList.add("sticky-navigation")
   } else {
