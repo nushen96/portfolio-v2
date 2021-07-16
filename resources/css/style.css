@@ -297,6 +297,23 @@ header {
   line-height: 150%;
 }
 
+.about-link {
+  font-size: 1.1em;
+  color: #bdadea;
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-decoration 0.5s ease;
+  -webkit-transition: text-decoration 0.5s ease;
+  -moz-transition: text-decoration 0.5s ease;
+  -ms-transition: text-decoration 0.5s ease;
+  -o-transition: text-decoration 0.5s ease;
+}
+
+.about-link:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
 .about-info span i {
   display: inline-block;
   margin-right: 10px;
