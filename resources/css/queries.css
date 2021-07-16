@@ -92,6 +92,10 @@
         text-align: center;
     }
 
+    .hero-image {
+        margin-bottom: 24px;
+      }
+
     .about-info {
         margin: 24px 0;
         flex-direction: column;
