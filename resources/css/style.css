@@ -301,17 +301,13 @@ header {
   font-size: 1.1em;
   color: #bdadea;
   cursor: pointer;
+  border-bottom: 0px;
   text-decoration: none;
-  transition: text-decoration 0.5s ease;
-  -webkit-transition: text-decoration 0.5s ease;
-  -moz-transition: text-decoration 0.5s ease;
-  -ms-transition: text-decoration 0.5s ease;
-  -o-transition: text-decoration 0.5s ease;
 }
 
 .about-link:hover {
   font-size: 1.1em;
-  text-decoration: underline;
+  border-bottom: 1px solid #bdadea;
 }
 
 .about-info span i {
