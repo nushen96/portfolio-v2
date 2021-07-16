@@ -215,7 +215,7 @@ header {
   border-bottom: 2px solid #4381c1;
 }
 
-.navigation-item__active {
+.navigation-item--active {
   color: #4381c1;
   font-weight: 400;
 }
