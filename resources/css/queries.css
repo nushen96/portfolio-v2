@@ -3,9 +3,7 @@
         font-size: 20px;
     }
 
-    header {
-        height: auto;
-    }
+    
 
     .hero-section {
         margin-top: 24px;
@@ -30,6 +28,10 @@
         font-size: 18px;
         padding-top: 20px;
         padding-bottom: 10px;
+    }
+
+    header {
+        height: auto;
     }
 
     .button.header-button {
