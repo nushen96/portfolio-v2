@@ -1,3 +1,5 @@
+
+
 const getAbsolutePosition = (element) => {
   const currentPosition = window.scrollY;
   return currentPosition + element.getBoundingClientRect().top;
@@ -85,19 +87,23 @@ const activateMenuLink = (element) => {
 };
 
 const handleMenuLinkScrollActivation = () => {
-  const links = document.querySelectorAll("#header-section, #about-section, #skills-section, #portfolio-section");
-  const currentPosition = window.scrollY
-  let linksArray = []
-  links.forEach(link => linksArray.push(link))
+  const links = document.querySelectorAll(
+    "#header-section, #about-section, #skills-section, #portfolio-section"
+  );
+  const currentPosition = window.scrollY;
+  let linksArray = [];
+  links.forEach((link) => linksArray.push(link));
   const closestElement = linksArray.reduce((elem1, elem2) => {
-    let elem1Position = getAbsolutePosition(elem1)
-    let elem2Position = getAbsolutePosition(elem2)
-    let elem1Distance = Math.abs(elem1Position-currentPosition)
-    let elem2Distance = Math.abs(elem2Position-currentPosition)
+    let elem1Position = getAbsolutePosition(elem1);
+    let elem2Position = getAbsolutePosition(elem2);
+    let elem1Distance = Math.abs(elem1Position - currentPosition);
+    let elem2Distance = Math.abs(elem2Position - currentPosition);
     if (elem1Distance == elem2Distance) {
-      return elem1
+      return elem1;
     }
-    return elem1Distance<elem2Distance ? elem1 : elem2
-  })
-  activateMenuLink(document.querySelector(`.navigation-item[href="#${closestElement.id}"]`))
+    return elem1Distance < elem2Distance ? elem1 : elem2;
+  });
+  activateMenuLink(
+    document.querySelector(`.navigation-item[href="#${closestElement.id}"]`)
+  );
 };
