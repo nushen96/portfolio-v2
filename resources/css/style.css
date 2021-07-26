@@ -145,6 +145,8 @@ p {
   position: absolute;
   bottom: 3rem;
   right: -0.7rem;
+  animation: slideUp 0.5 ease;
+  -webkit-animation: slideUp 0.5s ease;
 }
 
 .action-button-items {

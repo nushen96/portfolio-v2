@@ -180,6 +180,17 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+    bottom: -3rem;
+    opacity: 0;
+  }
+  to {
+    bottom: 3rem;
+    opacity: 1
+  }
+}
+
 /* user doesn't want animations */
 @media (prefers-reduced-motion) {
   .js--scroll {
