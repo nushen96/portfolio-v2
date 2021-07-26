@@ -54,12 +54,12 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const rotateBackActionButton = () => {
+const handleActionButtonAnimation = () => {
     const actionButton = document.querySelector('.action-button')
     if(actionButton.classList.contains('action-button--open')) {
-        actionButton.style.animation = 'rotate45 0.5s ease'
+        actionButton.style.animation = 'scaleUp 0.5s ease'
     }
     else {
-        actionButton.style.animation = 'rotateBack45 0.5s ease'
+        actionButton.style.animation = 'scaleDown 0.5s ease'
     }
 }
